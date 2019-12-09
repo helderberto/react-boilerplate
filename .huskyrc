@@ -1,4 +1,6 @@
 {
-  "pre-commit": "yarn lint",
-  "pre-push": "yarn lint && yarn test"
+  "hooks": {
+    "pre-commit": "yarn lint",
+    "pre-push": "yarn lint && yarn test"
+  }
 }
