@@ -1,8 +1,8 @@
-const path = require('path')
+const path = require('path');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const PATH_ROOT = path.resolve(__dirname, '..')
+const PATH_ROOT = path.resolve(__dirname, '..');
 
 module.exports = {
   entry: {
@@ -22,7 +22,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        use: ['babel-loader', 'eslint-loader'],
         exclude: /node_modules/,
       },
       {
@@ -32,4 +32,4 @@ module.exports = {
       },
     ],
   },
-}
+};

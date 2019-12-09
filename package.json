@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack --config config/webpack.config.prod.js",
     "start": "webpack-dev-server --open --config config/webpack.config.dev.js",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "yarn eslint . --fix"
   },
   "author": "Helder Burato Berto <helder.burato@gmail.com> (https://helder.dev/)",
   "license": "MIT",
@@ -45,12 +47,15 @@
     "dotenv": "^8.2.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.1.0",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "react-hot-loader": "^4.12.18",

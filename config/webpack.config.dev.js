@@ -1,11 +1,11 @@
-const path = require('path')
+const path = require('path');
 
-const merge = require('webpack-merge')
-const webpack = require('webpack')
+const merge = require('webpack-merge');
+const webpack = require('webpack');
 
-const base = require('./webpack.config.base')
+const base = require('./webpack.config.base');
 
-const PATH_ROOT = path.resolve(__dirname, '..')
+const PATH_ROOT = path.resolve(__dirname, '..');
 
 module.exports = merge(base, {
   mode: 'development',
@@ -19,4 +19,4 @@ module.exports = merge(base, {
     hot: true,
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
-})
+});
