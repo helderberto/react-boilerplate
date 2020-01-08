@@ -1,3 +1,3 @@
-# 🏁React Boilerplate
+# 🏁 React Boilerplate
 
 > React boilerplate to easy start projects.
